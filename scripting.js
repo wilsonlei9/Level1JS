@@ -2,9 +2,9 @@ let clock = 7;
 let random;
 let answer;
 let clickCount;
-let num1 = 1;
-let num2 = 2;
-let num3 = 3;
+let num1 = "1";
+let num2 = "2";
+let num3 = "3";
 
 
 
@@ -12,6 +12,7 @@ let num3 = 3;
         document.getElementById("clockNum").innerHTML = clock;
         clickCount = 0;
         random = ((Math.floor(Math.random() * 3) + 1).toString()) + ((Math.floor(Math.random() * 3) + 1).toString()) + ((Math.floor(Math.random() * 3) + 1).toString())
+        return random;
     }
 
     function guess() {
@@ -27,7 +28,7 @@ let num3 = 3;
     function button1() {
         var text = document.getElementById("display1");
         text.style.display = "block";
-        num1 = num1.toString();
+        // num1 = num1.toString();
         clickCount++;
         if (clickCount == 3)
         {
@@ -38,18 +39,22 @@ let num3 = 3;
             if (answerNum < random)
             {
                 var text = document.getElementById("less");
+                var text2 = document.getElementById("greater");
                 text.style.display = "block";
+                text2.style.display = "none";
                 answer = 0;
             }
             if (answerNum > random)
             {
                 var text = document.getElementById("greater");
+                var text2 = document.getElementById("less");
                 text.style.display = "block";
+                text2.style.display = "none";
                 answer = 0;
             }
             if (answerNum == random)
             {
-                clock = 10;
+                clock = 8;
             }
             if (clock == 0)
             {
@@ -64,7 +69,7 @@ let num3 = 3;
     function button2() {
         var text = document.getElementById("display2");
         text.style.display = "block";
-        num2 = num2.toString();
+        // num2 = num2.toString();
         clickCount++;
         if (clickCount == 3)
         {
@@ -75,18 +80,22 @@ let num3 = 3;
             if (answerNum < random)
             {
                 var text = document.getElementById("less");
+                var text2 = document.getElementById("greater");
                 text.style.display = "block";
+                text2.style.display = "none";
                 answer = 0;
             }
             if (answerNum > random)
             {
                 var text = document.getElementById("greater");
+                var text2 = document.getElementById("less");
                 text.style.display = "block";
+                text2.style.display = "none";
                 answer = 0;
             }
             if (answerNum == random)
             {
-                clock = 10;
+                clock = 8;
             }
             if (clock == 0)
             {
@@ -101,7 +110,7 @@ let num3 = 3;
     function button3() {
         var text = document.getElementById("display3");
         text.style.display = "block";
-        num3 = num3.toString();
+        // num3 = num3.toString();
         clickCount++;
         if (clickCount == 3)
         {
@@ -112,18 +121,22 @@ let num3 = 3;
             if (answerNum < random)
             {
                 var text = document.getElementById("less");
+                var text2 = document.getElementById("greater");
                 text.style.display = "block";
+                text2.style.display = "none";
                 answer = 0;
             }
             if (answerNum > random)
             {
                 var text = document.getElementById("greater");
+                var text2 = document.getElementById("less");
                 text.style.display = "block";
+                text2.style.display = "none";
                 answer = 0;
             }
             if (answerNum == random)
             {
-                clock = 10;
+                clock = 8;
             }
             if (clock == 0)
             {
