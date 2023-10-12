@@ -16,14 +16,30 @@
     </h1>
 
     <div id="buttons">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-      </div>
-      <input id="output" type="text">
-    <input id = "output" type = "text">
+        <button class = "button1" onclick = "button1()" id = "button1">1</button>
+        <button class = "button2" onclick = "button2()" id = "button2">2</button>
+        <button class = "button3" onclick = "button3()" id = "button3">3</button>
+    </div>
 
-    <button class = "enter" onclick = "guess()">Enter</button>
+    <div class = "display1" id = "display1" style = "display: none;">
+        1
+    </div>
+    <div class = "display2" id = "display2" style = "display: none;">
+        2
+    </div>
+    <div class = "display3" id = "display3" style = "display: none;">
+        3
+    </div>
+
+    <div class = "lessThan" id="less" style = "display: none;">
+        Too low
+    </div>
+    <div class = "greaterThan" id="greater" style = "display: none;">
+        Too high
+    </div>
+      
+
+    <button class = "clear" onclick = >Clear</button>
 
     <div class="clock" id="clockdisplay">
         <h1>Clock: <span id = "clockNum"></span></h1>
